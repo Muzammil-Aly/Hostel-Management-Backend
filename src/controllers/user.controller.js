@@ -328,6 +328,7 @@ const loginUser = asyncHandler(async (req, res) => {
   const options = {
     httpOnly: true, // the response will be only editable from the servre side only
     secure: true,
+    sameSite: "None",
   };
   return res
     .status(200)
